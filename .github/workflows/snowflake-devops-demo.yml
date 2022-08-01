@@ -40,4 +40,4 @@ jobs:
           pip install schemachange
           
           echo "Step 2: Running schemachange"
-          schemachange -f $GITHUB_WORKSPACE/migrations -a $SF_ACCOUNT -u raviteja36 -r ACCOUNTADMIN -w DEMO_WH -d DEMO_DB -c $SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
+          schemachange -f $GITHUB_WORKSPACE/migrations -a $SF_ACCOUNT -u DEMO_USER -r SYSADMIN -w DEMO_WH -d DEMO_DB -c $SF_DATABASE.SCHEMACHANGE.CHANGE_HISTORY --create-change-history-table
